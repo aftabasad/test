@@ -1,0 +1,109 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "5f60c841-e83e-4bea-9e5b-9a384160d2e5": {
+        "id": "5f60c841-e83e-4bea-9e5b-9a384160d2e5",
+        "parent": null,
+        "name": "test1.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test1.py",
+        "cursor": {
+          "lineNumber": 5,
+          "column": 22
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "test1"
+        },
+        "triggers": [],
+        "lastUpdated": 1607735123359,
+        "testCases": {
+          "7bf194d0-837a-4984-9eb5-bdd2dae35db5": {
+            "id": "7bf194d0-837a-4984-9eb5-bdd2dae35db5",
+            "name": "Test event",
+            "functionId": "5f60c841-e83e-4bea-9e5b-9a384160d2e5",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "5f60c841-e83e-4bea-9e5b-9a384160d2e5"
+    ],
+    "currentFileId": "5f60c841-e83e-4bea-9e5b-9a384160d2e5",
+    "resources": {
+      "ddbChineseYear": {
+        "name": "ddbChineseYear",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:492482921988:table/ChineseYear",
+            "name": "ChineseYear",
+            "partitionKey": "Year",
+            "partitionKeyType": "N",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.4.1",
+    "projectName": "test1",
+    "projectDescription": "test code",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1607750480363
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test",
+      "url": "https://github.com/aftabasad/test"
+    }
+  }
+}
